@@ -1,21 +1,24 @@
 const works = [
   {
     imgSrc: "/images/project-1.jpg",
-    title: "eCommerce website",
-    tags: ["eCommerce", "Development"],
-    projectLink: "https://github.com/codewithsadee/anon-ecommerce-website",
+    title: "Nike E-Commerce Website",
+    tags: [ "Fullstack", "Admin Account and Client"],
+    projectLink: "https://nike-e-commerce.onrender.com",
+    githubLink: "https://github.com/Khaiisme/Nike-E-Commerce"
   },
   {
     imgSrc: "/images/project-2.jpg",
-    title: "Free stock photo app",
-    tags: ["API", "SPA"],
-    projectLink: "https://pixstock-official.vercel.app/",
+    title: "MovieLand Website",
+    tags: ["API", "CSS", "React"],
+    projectLink: "https://movieland-net.onrender.com",
+    githubLink: "https://github.com/Khaiisme/MovieLand-net"
   },
   {
     imgSrc: "/images/project-3.jpg",
-    title: "Recipe app",
-    tags: ["Development", "API"],
-    projectLink: "",
+    title: "Recipe Search Website",
+    tags: ["API", "TailwindCSS", "React"],
+    projectLink: "https://recip-search.onrender.com",
+    githubLink: "https://github.com/Khaiisme/Recip-Search"
   },
   
 ];
@@ -28,7 +31,7 @@ function Work() {
         </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6">
-        {works.map(({ imgSrc, title, tags, projectLink }, key) => (
+        {works.map(({ imgSrc, title, tags, projectLink,githubLink }, key) => (
           <div
             key={key}
             className="bg-zinc-800 rounded-lg shadow-md transition-transform duration-300 p-4"
@@ -56,7 +59,7 @@ function Work() {
 
               <div className="mt-4 flex items-center justify-between">
                 <a
-                  href={projectLink}
+                  href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 text-zinc-400 font-bold hover:text-white "
