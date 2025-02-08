@@ -6,6 +6,7 @@ import Skill from "./components/skills";
 import Work from "./components/work";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import BubbleBackground from "./components/bubble";
 function App() {
   const [opacity, setOpacity] = useState(1);
 
@@ -29,6 +30,8 @@ function App() {
     };
   }, []);
   return (
+    <>
+    <BubbleBackground/>
     <div>
       <Header opacity={ opacity } /> {/* Apply calculated opacity */}
       <Hero />
@@ -37,8 +40,8 @@ function App() {
       <Work/>
       <Contact/>
       <Footer/>
-      
     </div>
+    </>
   );
 }
 

@@ -21,7 +21,7 @@ const Header = ({ opacity }) => {
         {/* Navigation Links */}
         <Navbar />
         {/* Contact Me Button */}
-        <div className="hidden md:block"> ///</div>
+        <div className="hidden md:block"></div>
       </nav>
     </header>
   );

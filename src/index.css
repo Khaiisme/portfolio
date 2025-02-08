@@ -5,6 +5,36 @@
 body {
   @apply bg-zinc-900 text-zinc-50 h-[200vh]
 }
+.bubbles-container {
+  position: fixed; /* Covers the entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Ensures it covers full viewport */
+  pointer-events: none; /* Prevents interference with clicks */
+  z-index: -1; /* Keeps bubbles behind all content */
+}
+
+/* Individual bubbles */
+.bubble {
+  position: absolute;
+  bottom: -50px; /* Start below the screen */
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: rise linear infinite;
+}
+
+/* Bubble floating animation */
+@keyframes rise {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateY(-100vh);
+      opacity: 0;
+  }
+}
 
 html {
   @apply font-sans;
