@@ -18,7 +18,6 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    
     icon: (
       <svg
         width="24"
@@ -36,7 +35,6 @@ const socialLinks = [
     alt: "LinkedIn",
   },
   {
-    
     icon: (
       <svg
         width="24"
@@ -54,7 +52,6 @@ const socialLinks = [
     alt: "Twitter X",
   },
   {
-    
     icon: (
       <svg
         width="25"
@@ -76,8 +73,8 @@ const socialLinks = [
 function Contact() {
   return (
     <section id="contact" className="py-16 bg-zinc-900 text-white">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 px-20">
-        <div className="flex flex-col justify-center space-y-4">
+      <div className="container mx-1 grid grid-cols-1 md:grid-cols-2 gap-0 px-4 items-center">
+        <div className="flex flex-col justify-center space-y-4 pb-9">
           <h2 className="text-2xl font-bold text-center ">
             Contact Me for More
           </h2>

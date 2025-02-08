@@ -2,25 +2,24 @@ const works = [
   {
     imgSrc: "/images/project-1.jpg",
     title: "Nike E-Commerce Website",
-    tags: [ "Fullstack", "Admin Account and Client"],
+    tags: ["Fullstack", "Admin Account and Client"],
     projectLink: "https://nike-e-commerce.onrender.com",
-    githubLink: "https://github.com/Khaiisme/Nike-E-Commerce"
+    githubLink: "https://github.com/Khaiisme/Nike-E-Commerce",
   },
   {
     imgSrc: "/images/project-2.jpg",
     title: "MovieLand Website",
     tags: ["API", "CSS", "React"],
     projectLink: "https://movieland-net.onrender.com",
-    githubLink: "https://github.com/Khaiisme/MovieLand-net"
+    githubLink: "https://github.com/Khaiisme/MovieLand-net",
   },
   {
     imgSrc: "/images/project-3.jpg",
     title: "Recipe Search Website",
     tags: ["API", "TailwindCSS", "React"],
     projectLink: "https://recip-search.onrender.com",
-    githubLink: "https://github.com/Khaiisme/Recip-Search"
+    githubLink: "https://github.com/Khaiisme/Recip-Search",
   },
-  
 ];
 function Work() {
   return (
@@ -31,19 +30,25 @@ function Work() {
         </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-6">
-        {works.map(({ imgSrc, title, tags, projectLink,githubLink }, key) => (
+        {works.map(({ imgSrc, title, tags, projectLink, githubLink }, key) => (
           <div
             key={key}
             className="bg-zinc-800 rounded-lg shadow-md transition-transform duration-300 p-4"
           >
-            <figure className="rounded-lg">
-              <img
-                src={imgSrc}
-                alt={title}
-                loading="lazy"
-                className="w-full h-48 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
-              />
-            </figure>
+            <a
+              href={projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure className="rounded-lg cursor-pointer">
+                <img
+                  src={imgSrc}
+                  alt={title}
+                  loading="lazy"
+                  className="w-full h-48 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+            </a>
             <div className="mt-4">
               <h3 className="text-lg font-semibold text-white">{title}</h3>
               <div className="flex flex-wrap mt-2 gap-2">

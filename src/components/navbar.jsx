@@ -54,7 +54,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative bg-zinc-700 p-2 rounded-lg select-none">
+    <div className="relative bg-zinc-700 p-2 rounded-lg select-none hidden md:block">
       {/* Active Box */}
       <div
         ref={activeBox}

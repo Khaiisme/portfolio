@@ -2,7 +2,7 @@ function About() {
   return (
     <section id="about" className="pt-5">
         <h2 className="text-center text-2xl font-bold py-5">About Me </h2>
-    <div className=" max-w-[150vh] mx-auto items-center px-8 py-4 bg-zinc-800 rounded-lg">
+    <div className=" max-w-[150vh] mx-auto  items-center px-8 py-4 bg-zinc-800 rounded-lg">
 
       <p>
         {" "}
