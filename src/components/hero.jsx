@@ -12,7 +12,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="flex justify-center items-center bg-gradient text-white h-screen mt-14 mx-2"
+      className="flex justify-center items-center bg-gradient text-white h-screen mt-5 sm:mt-14 mx-2"
     >
       <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:space-x-8">
         {/* Avatar Image */}

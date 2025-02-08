@@ -8,7 +8,7 @@ const Header = ({ opacity }) => {
       <nav className="max-w mx-auto px-10 py-4 flex items-center justify-between ">
         <div>
           <button
-            className="bg-white text-black text-sm font-bold px-4 py-2 rounded-md shadow hover:bg-gray-200 transition ml-36 sm:ml-auto"
+            className="bg-white text-black text-sm font-bold px-4 py-2 rounded-md shadow hover:bg-gray-200 transition ml-40 sm:ml-auto"
             onClick={() =>
               document
                 .querySelector("#contact")
